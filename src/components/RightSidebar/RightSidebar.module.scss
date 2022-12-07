@@ -1,0 +1,28 @@
+.wrapper {
+	z-index: 1;
+	width: 20%;
+}
+.rightsidebar-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.icon {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex: 1;
+		p {
+			color: rgb(101, 103, 107);
+			font-size: 1.5rem;
+			padding: 3px 8px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		p:not(:last-child) {
+			margin-right: 12px;
+		}
+	}
+}
+.rightsidebar-header .icon p:hover {
+	background: rgba(0, 0, 0, 0.05);
+}

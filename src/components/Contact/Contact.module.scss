@@ -1,0 +1,34 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	padding: 6px 8px;
+	border-radius: 4px;
+	position: relative;
+	cursor: pointer;
+	.img {
+		display: block;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		margin-right: 4px;
+		object-fit: cover;
+	}
+}
+.wrapper:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+.active {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid var(--white);
+	position: absolute;
+	left: 30px;
+	bottom: 6px;
+}
+.online {
+	background: green;
+}
+.offline {
+	background: grey;
+}
